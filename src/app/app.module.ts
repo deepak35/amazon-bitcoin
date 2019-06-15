@@ -3,14 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material';
+import { CryptoComponent } from './crypto/crypto.component';
+import { CorpComponent } from './corp/corp.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CryptoComponent,
+    CorpComponent
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
